@@ -5,7 +5,7 @@ const Navbar = () => {
       <div>Sudoku Solver</div>
       <div className="liquid-button flex items-center gap-2 px-6 py-3">
         {/* Update Link once released */}
-        <a href="">Add to Browser</a>
+        <a href="">Add to Chrome</a>
       </div>
     </div>
   );

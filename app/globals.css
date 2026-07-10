@@ -1,26 +1,75 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+	--background: #f3f5fb;
+	--foreground: #0f172a;
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+	--color-background: var(--background);
+	--color-foreground: var(--foreground);
+	--font-sans: var(--font-geist-sans);
+	--font-mono: var(--font-geist-mono);
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+	background: var(--background);
+	color: var(--foreground);
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.liquid-button {
+	position: relative;
+	overflow: hidden;
+	border-radius: 999px;
+	backdrop-filter: blur(18px);
+	background: rgba(255, 255, 255, 0.5);
+	border: 1px solid rgba(255, 255, 255, 0.8);
+	box-shadow:
+		0 8px 30px rgba(129, 140, 248, 0.15),
+		inset 0 1px 0 rgba(255, 255, 255, 0.8);
+}
+
+.hero-gradient {
+	background:
+		radial-gradient(
+			circle at 85% 20%,
+			rgba(126, 87, 255, 0.15),
+			transparent 40%
+		),
+		radial-gradient(
+			circle at 90% 70%,
+			rgba(98, 158, 255, 0.12),
+			transparent 35%
+		);
+}
+
+.glass {
+	backdrop-filter: blur(18px);
+	background: rgba(255, 255, 255, 0.45);
+	border: 1px solid rgba(255, 255, 255, 0.7);
+}
+
+.card-shadow {
+	box-shadow: 0 10px 30px rgba(15, 23, 42, 0.05);
+}
+
+#window-controls {
+	@apply flex gap-2;
+
+	.close {
+		@apply size-3.5 rounded-full bg-[#ff6157] cursor-pointer;
+	}
+
+	.minimize {
+		@apply size-3.5 rounded-full bg-[#ffc030];
+	}
+
+	.maximize {
+		@apply size-3.5 rounded-full bg-[#2acb42];
+	}
+}
+
+#window-header {
+	@apply flex items-center justify-between px-4 py-3 rounded-t-lg bg-gray-50 border-b border-gray-200 select-none text-sm text-gray-400;
 }

@@ -1,3 +1,5 @@
+import Window from "./Window";
+
 export default function Hero() {
   return (
     <section className="relative  px-4 sm:px-12 lg:px-24 xl:px-48 py-4">
@@ -26,7 +28,9 @@ export default function Hero() {
         </div>
 
         {/* Sudoku Mockup will add later */}
-        <div className=""></div>
+        <div className="">
+          <Window />
+        </div>
       </div>
     </section>
   );

@@ -5,21 +5,21 @@ const Works = () => {
 
       <div className="mx-auto mt-20 grid max-w-5xl md:grid-cols-3 gap-12">
         <div>
-          <div className="glass mx-auto h-24 w-24 rounded-3xl" />
+          <img src="/step-1.png" className="glass mx-auto h-24 w-24 rounded-3xl" />
           <div className="mt-6">1</div>
           <h3 className=" font-semibold">Add Extension</h3>
           <div className="">Install Sudoku Solver from Chrome Web Store</div>
         </div>
 
         <div>
-          <div className="glass mx-auto h-24 w-24 rounded-3xl" />
+          <img src="/step-2.png" className="glass mx-auto h-24 w-24 rounded-3xl" />
           <div className="mt-6">2</div>
           <h3 className=" font-semibold">Open Puzzle</h3>
           <div className="">Go to NYTimes Sudoku or LinkedIn Mini Sudoku.</div>
         </div>
 
         <div>
-          <div className="glass mx-auto h-24 w-24 rounded-3xl" />
+          <img src="/step-3.png" className="glass mx-auto h-24 w-24 rounded-3xl" />
           <div className="mt-6">3</div>
           <h3 className=" font-semibold">Click Solve</h3>
           <div className="">
